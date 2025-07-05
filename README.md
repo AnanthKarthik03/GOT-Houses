@@ -21,15 +21,15 @@ This is a Single Page Application (SPA) built using **Angular** that displays an
 
 ## 📂 Folder Structure (Simplified)
 
-src/
-├── app/
-│ ├── core/ # Core services and models
-│ ├── shared/ # Shared components (header, navbar, etc.)
-│ ├── pages/ # Feature modules and components
-│ └── app.routes.ts # Main routing config
-├── assets/ # Static assets
-├── styles.scss # Global styles
-└── main.ts # Entry point
+- src/
+   - app/
+      - core/ # Core services and models
+      - shared/ # Shared components (header, navbar, etc.)
+      - pages/ # Feature modules and components
+      - app.routes.ts # Main routing config
+   - assets/ # Static assets
+   - styles.scss # Global styles
+   - main.ts # Entry point
 
 
 
