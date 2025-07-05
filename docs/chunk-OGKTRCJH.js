@@ -1,0 +1,1 @@
+import{O as i,e,g as a}from"./chunk-73BZJKBW.js";var o=class r{constructor(t){this.http=t}getCharacterByUrl(t){return this.http.get(t)}getCharacter(t){return this.http.get(`https://anapioficeandfire.com/api/characters/${t}`)}static \u0275fac=function(c){return new(c||r)(a(i))};static \u0275prov=e({token:r,factory:r.\u0275fac,providedIn:"root"})};export{o as a};
