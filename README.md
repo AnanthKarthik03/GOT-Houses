@@ -66,4 +66,5 @@ To create a production build:
 ng build --prod
  
 Demo Link : https://ananthkarthik03.github.io/GOT-Houses/
- 
+
+Documentation: [PDF View](https://github.com/AnanthKarthik03/GOT-Houses/blob/main/docs/Project%20Documentation.pdf)
