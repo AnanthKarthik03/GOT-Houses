@@ -40,8 +40,8 @@ To run this project locally:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/got-angular-spa.git
-   cd got-angular-spa
+   git clone https://github.com/AnanthKarthik03/GOT-Houses.git
+   cd GOT-Houses
 Install dependencies
 
 Make sure Node.js and Angular CLI are installed.
@@ -64,9 +64,6 @@ To create a production build:
 
 
 ng build --prod
-🧑‍💻 Developer
-Name: Anantha Karthick
-
-Email: your-email@example.com
-
-GitHub: https://github.com/ananthakarthik
+ 
+Demo Link : https://ananthkarthik03.github.io/GOT-Houses/
+ 
