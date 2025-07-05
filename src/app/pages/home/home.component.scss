@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    padding: 2rem;
+  
+    article {
+        background: rgb(0 0 0 / 47%);
+        ;
+        border: 1px solid cornsilk;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        color: cornsilk;
+        cursor: pointer;
+        transition: color 0.3s;
+      h2 {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  h1{
+    text-align: center;
+    font-size: 50px;
+
+  }
+  

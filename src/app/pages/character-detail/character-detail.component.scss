@@ -1,0 +1,89 @@
+.char-detail {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 80vh;
+    color: cornsilk;
+  
+    .char-card {
+      background: rgb(0 0 0 / 47%);      ; // semi-transparent black
+      border: 1px solid cornsilk;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      width: 100%;
+      max-width: 700px;
+      cursor: default;
+      transition: color 0.3s;
+  
+      h1.char-name {
+        margin: 0 0 1.5rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+        color: cornsilk;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 0.5rem;
+      }
+  
+      .char-meta {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
+  
+        div {
+          background: rgba(255, 255, 255, 0.05);
+          padding: 1rem;
+          border-radius: 0.5rem;
+          font-size: 1rem;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+      }
+  
+      .char-titles {
+        h2 {
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
+          color: cornsilk;
+        }
+  
+        ul {
+          list-style: disc inside;
+          padding-left: 1rem;
+  
+          li {
+            margin-bottom: 0.4rem;
+            color: cornsilk;
+          }
+        }
+      }
+  
+      &:hover {
+        color: #fff;
+      }
+    }
+  
+   
+  }
+  .back-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+  }
+  
+  .back {
+    background: rgba(255, 255, 255, 0.1);
+    color: cornsilk;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid cornsilk;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+  

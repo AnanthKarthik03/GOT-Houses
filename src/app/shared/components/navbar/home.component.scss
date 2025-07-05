@@ -1,0 +1,36 @@
+.banner {
+    height: 40vh;
+    background: url('/assets/images/iron‑throne.jpg') center/cover fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: #fff;
+      font-size: clamp(2rem, 5vw, 4rem);
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    padding: 2rem;
+  
+    article {
+      background: radial-gradient(circle at top left, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      color: #f1f1f1;
+      cursor: pointer;
+      transition: color 0.3s;
+      h2 {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }

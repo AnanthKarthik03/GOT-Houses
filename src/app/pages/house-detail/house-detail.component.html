@@ -1,0 +1,32 @@
+<div class="back-wrapper">
+    <button class="back" (click)="back()">Back</button>
+  </div>
+<section *ngIf="house() as h" class="house-detail">
+  <header class="hero">
+    <h1>{{ h.name }}</h1>
+    <p class="words">“{{ h.words || '—' }}”</p>
+  </header>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>🏞️ Region</h3>
+      <p>{{ h.region || '—' }}</p>
+    </div>
+    <div class="info-card">
+      <h3>🪑 Seats</h3>
+      <ul><li *ngFor="let s of h.seats">{{ s || '—' }}</li></ul>
+    </div>
+    <div class="info-card">
+      <h3>👑 Titles</h3>
+      <ul><li *ngFor="let t of h.titles">{{ t || '—' }}</li></ul>
+    </div>
+  </div>
+  <section class="members-section" *ngIf="members().length">
+    <h2>🛡️ Sworn Members</h2>
+    <div class="members">
+      <a *ngFor="let c of members()" routerLink="/characters/{{ c.url | extractId }}">
+        {{ c.name || c.aliases?.[0] || 'Unknown' }}
+      </a>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,108 @@
+.house-detail {
+    padding: 2rem;
+    color: cornsilk;
+  
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+  
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: cornsilk;
+      }
+  
+      .words {
+        font-style: italic;
+        color: #dcdcdc;
+        font-size: 1.2rem;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+      }
+    }
+  
+    .info-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-bottom: 2rem;
+  
+      .info-card {
+        background: rgb(0 0 0 / 47%);
+        ;
+        border: 1px solid cornsilk;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 0.75rem;
+        padding: 1.2rem;
+  
+        h3 {
+          margin-top: 0;
+          color: cornsilk;
+          font-size: 1.2rem;
+        }
+  
+        p, ul {
+          margin: 0.5rem 0 0;
+          padding-left: 1.2rem;
+          color: cornsilk;
+  
+          li {
+            margin-bottom: 0.4rem;
+          }
+        }
+      }
+    }
+  
+    .members-section {
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          color: cornsilk;
+        }
+      
+        .members {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.8rem;
+      
+          a {
+            display: inline-block;
+            padding: 0.5rem 0.9rem;
+            background: #00000040;          // dark translucent card
+            border: 1px solid cornsilk;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 0.75rem;
+            color: cornsilk;
+            text-decoration: none;
+            transition: background 0.25s ease, transform 0.25s ease;
+      
+            &:hover {
+              background: rgba(255, 255, 255, 0.15);
+              transform: translateY(-2px);
+            }
+          }
+        }
+      }
+      
+  }
+  
+  .back-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+  }
+  
+  .back {
+    background: rgba(255, 255, 255, 0.1);
+    color: cornsilk;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid cornsilk;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+  

@@ -1,0 +1,16 @@
+<section class="banner">
+    <h1>Great Houses of Westeros</h1>
+  </section>
+  
+  <section class="grid">
+    <article
+      *ngFor="let h of houses(); let i = index"
+      [@cardHover]="hoverIndex() === i ? 'hover' : 'rest'"
+      (mouseenter)="hoverIndex.set(i)"
+      (mouseleave)="hoverIndex.set(null)"
+      routerLink="/houses/{{ h.url | extractId }}"
+    >
+      <h2>{{ h.name }}</h2>
+      <p>{{ h.region }}</p>
+    </article>
+  </section>

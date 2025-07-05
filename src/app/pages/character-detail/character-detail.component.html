@@ -1,0 +1,22 @@
+<div class="back-wrapper">
+    <button class="back" (click)="back()">Back</button>
+  </div>
+<section *ngIf="char() as c" class="char-detail">
+  <div class="char-card">
+    <h1 class="char-name">{{ c.name || c.aliases?.[0] || 'Unknown' }}</h1>
+
+    <div class="char-meta">
+      <div><strong>Gender:</strong> {{ c.gender || '—' }}</div>
+      <div><strong>Culture:</strong> {{ c.culture || '—' }}</div>
+      <div><strong>Born:</strong> {{ c.born || '—' }}</div>
+      <div><strong>Died:</strong> {{ c.died || '—' }}</div>
+    </div>
+
+    <div class="char-titles" *ngIf="c.titles?.length">
+      <h2>Titles</h2>
+      <ul>
+        <li *ngFor="let t of c.titles">{{ t || '—' }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

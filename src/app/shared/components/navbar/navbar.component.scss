@@ -1,0 +1,25 @@
+ 
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    color: cornsilk;
+    border-bottom: 1px solid cornsilk;
+  
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: cornsilk;
+      text-decoration: none;
+    }
+  
+    .company {
+      font-size: 1rem;
+      font-style: italic;
+      color: cornsilk;
+    }
+  }
+  
